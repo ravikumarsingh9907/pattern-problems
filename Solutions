@@ -1,4 +1,4 @@
-PROBLEM NO.1
+PROBLEM NO.1-------------------------------------------------------------------------------------
 
 public class patternsProblem {
     public static void main(String[] args) {
@@ -15,5 +15,26 @@ public class patternsProblem {
     }
 }
 
-PROBLEM NO.2
+PROBLEM NO.2----------------------------------------------------------------------------------------
 
+public class patternsProblem {
+    public static void main(String[] args) {
+        Problem02(5); // taking size of pattern---------
+    }
+
+    static void Problem01(int n){
+    // row printing starts from here--------------
+        for (int row=1;row<=n;row++){
+        // column prints starts from here------------
+            for(int col=1;col<=row;col++){
+                System.out.print("* ");
+            }
+            // printing in new line----------
+            System.out.println();
+        }
+    }
+ }
+ 
+ PROBLEM NO.3--------------------------------------------------------------------------------------
+ 
+ 
