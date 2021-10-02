@@ -1,0 +1,19 @@
+PROBLEM NO.1
+
+public class patternsProblem {
+    public static void main(String[] args) {
+        Problem01(5);
+    }
+
+    static void Problem01(int n){
+        for (int row=1;row<=n;row++){
+            for(int col=1;col<=n;col++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+PROBLEM NO.2
+
