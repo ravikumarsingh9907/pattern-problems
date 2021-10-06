@@ -109,3 +109,21 @@ static void Problem06(int n){
 }
 
 PROBLEM NO.7--------------------------------------------------------------------------------
+
+public class patternsProblem {
+    public static void main(String[] args) {
+        Problem07(5);
+    }
+    static void Problem07(int n) {
+        for (int row=0;row<=n;row++){
+            for(int space=0;space<=row;space++){
+                System.out.print(" ");
+            }
+            for(int col=n; col>=row;col--){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
