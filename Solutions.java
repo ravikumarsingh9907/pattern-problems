@@ -1,5 +1,5 @@
 
-PROBLEM NO.1-------------------------------------------------------------------------------------
+// PROBLEM NO.1-------------------------------------------------------------------------------------
 
 public class patternsProblem {
     public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class patternsProblem {
     }
 }
 
-PROBLEM NO.2----------------------------------------------------------------------------------------
+// PROBLEM NO.2----------------------------------------------------------------------------------------
 
 public class patternsProblem {
     public static void main(String[] args) {
@@ -36,7 +36,7 @@ public class patternsProblem {
     }
  }
  
- PROBLEM.03----------------------------------------------------------------------------------------
+//  PROBLEM.03----------------------------------------------------------------------------------------
  
  public class patternsProblem {
     public static void main(String[] args) {
@@ -51,7 +51,7 @@ public class patternsProblem {
         }
     }
  
- PROBLEM NO.4--------------------------------------------------------------------------------------
+//  PROBLEM NO.4--------------------------------------------------------------------------------------
  
  public class patternsProblem {
     public static void main(String[] args) {
@@ -67,7 +67,7 @@ public class patternsProblem {
     }
  }
  
-PROBLEM-05-----------------------------------------------------------------------------------
+// PROBLEM-05-----------------------------------------------------------------------------------
 
 public class patternsProblem {
     public static void main(String[] args) {
@@ -89,7 +89,7 @@ static void Problem05(int n){
     }
 }
 
-PROBLEM NO.6---------------------------------------------------------------------------------
+/* PROBLEM NO.6--------------------------------------------------------------------------------- */
 
 public class patternsProblem {
     public static void main(String[] args) {
@@ -109,7 +109,7 @@ static void Problem06(int n){
     }
 }
 
-PROBLEM NO.7--------------------------------------------------------------------------------
+/* PROBLEM NO.7-------------------------------------------------------------------------------- */
 
 public class patternsProblem {
     public static void main(String[] args) {
@@ -122,6 +122,72 @@ public class patternsProblem {
             }
             for(int col=n; col>=row;col--){
                 System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+     
+// PROBLEM NO.8-------------------------------------------------------------------------------
+ 
+ public class patternsProblem {
+    public static void main(String[] args) {
+        Problem08(5);
+    }
+ 
+ static void Problem08(int row) {
+        int k = 0;
+        for (int i = 1; i <= row; ++i, k = 0) {
+            for (int space = 1; space <= row - i; ++space) {
+                System.out.print("  ");
+            }
+            while (k != 2 * i - 1) {
+                System.out.print("* ");
+                ++k;
+            }
+
+            System.out.println();
+        }
+    }
+}
+
+// PROBLEM NO.9--------------------------------------------------------------------------------
+     
+ public class patternsProblem {
+    public static void main(String[] args) {
+        Problem09(5);
+    }
+static void Problem09(int n) {
+        int k = 0;
+        for (int i = n; i >= 1; --i, k = 0) {
+            for (int space = n-i; space >= 1; --space) {
+                System.out.print("  ");
+            }
+            while (k != 2 * i - 1) {
+                System.out.print("* ");
+                ++k;
+            }
+
+            System.out.println();
+        }
+    }
+}
+     
+// PROBLEM NO.10---------------------------------------------------------------------------------
+
+public class patternsProblem {
+    public static void main(String[] args) {
+        Problem10(5);
+    }
+     
+static void Problem10(int n) {
+        for (int row = 1; row <= n; row++) {
+            for (int col = n; col >= 1; col--) {
+                if (col > row) {
+                    System.out.print(" ");
+                } else {
+                    System.out.print("* ");
+                }
             }
             System.out.println();
         }
